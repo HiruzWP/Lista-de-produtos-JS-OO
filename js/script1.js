@@ -16,7 +16,7 @@ class Produto {//classe começando com letra maiuscula
             //nomeProduto;
             //preco;
         }
-        
+
         produto.id = this.id // adiciona o atributo id que está nessa(this) classe(class Produto) no objeto produto 
         produto.nomeProduto = document.getElementById("produto").value//adicionando dinamicamente o atributo nomeProduto no objeto produto
         produto.preco = document.getElementById("preco").value//pega todo o valor do input com id produto
@@ -30,5 +30,5 @@ class Produto {//classe começando com letra maiuscula
 }
 
 
-//objeto
+//objeto,
 var produto = new Produto()
