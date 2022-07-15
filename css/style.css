@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(228, 228, 228);
+    margin: auto;
+    width: 50%;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(15, 38, 168);
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+header h1{
+    font-size: 20px;
+
+}
+
+main{
+    padding: 30px 50px;
+
+}
+
+main h2{
+    font-size: 30px;
+
+}
+
+.card{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.lineInput{
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    outline: 0; /*tira a linha em volta quando clica*/
+}
+
+button{
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    background-color: rgb(15, 38, 168);
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgb(14, 31, 128);
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 15px;
+
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table th{
+    background-color: rgb(156, 156, 156);
+}
+

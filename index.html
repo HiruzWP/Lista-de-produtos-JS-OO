@@ -6,16 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS POO</title>
     <script src="js/script1.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
-    <div class="card">
-        <h1>Controle de produtos</h1>
+    <header>
+        <h1>Minha loja</h1>
 
-        <button onclick="produto.adicionar()">Adicionar</button>
-        <button onclick="produto.excluir()">Excluir</button>
-    </div>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+
+                <label for="">Produto</label>
+                <input type="text" id="produto">
+
+            </div>
+
+            <div class="lineInput">
+
+                <label for="">Preço</label>
+                <input type="text" id="preco">
+
+            </div>
+
+        <button onclick="produto.salvar()">Salvar</button>
+        <button onclick="produto.cancelar()">Cancelar</button>
+
+        </div>
+
+        <div class="content">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </thead>
+
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+
+
+
 
 </body>
 </html>
