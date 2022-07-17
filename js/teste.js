@@ -13,7 +13,7 @@ class Nome{ //ESSA POARH É SÓ UM MOLDE COM OS VALORES
 let algo = new Nome("Tiago") // ISSO SIM É UM OBJ
 
 let algo2 = new Nome()
-algo2.dinamico = 000
+algo2.dinamico = 002
 
 algo.dinamico = 123
 algo.dinamico2 = "StringQualquer"

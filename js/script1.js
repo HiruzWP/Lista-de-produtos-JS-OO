@@ -2,16 +2,19 @@
 class Produto {//classe começando com letra maiuscula
 
     constructor() {//inicializador de atributos
-        this.id = 1 //dentro dessa classe, o id vai inicializar em 1
+        this.id = 1 //dentro dessa classe(this), vai criar um id e inicializar em 1
+        this.arrayProdutos = []
     }
-
+    
     //método
     salvar(){//ao clicar no botão pra salvar já vai executar o método lerDados
         let produto = this.lerDados()// produto irá receber os dados do método lerDados(id, nome do produto e o preço)
+        this.validaCampos(produto)
+
     }
 
-    lerDados(){
-        let produto = {//objeto
+    lerDados(){//método lerDados dentro da classe Produto
+        let produto = {//objeto produto
             // Os atributos serão adicionados dinamicamente.
             //nomeProduto;
             //preco;
@@ -24,11 +27,18 @@ class Produto {//classe começando com letra maiuscula
         return produto
     }
 
+    validaCampos(produto){
+        if (produto.nomeProduto == "") {
+            
+        }
+
+    }
+
     cancelar(){
         alert("MétodoExcluir")
     }
 }
 
 
-//objeto,
+//objeto
 var produto = new Produto()
