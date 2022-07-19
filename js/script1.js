@@ -40,6 +40,10 @@ class Produto {//classe começando com letra maiuscula
             let imgDel = document.createElement("img")
             imgDel.src = "img/del.png"
             td_acao.appendChild(imgDel)
+            imgDel.setAttribute("onclick", "produto.deletar("+ this.arrayProdutos[i].id +")")// ("evento","ação"), ao clicar na imagem que a várivel imgDel tá, irá executar o deletar() do obj produto.
+
+            imgDel.setAttribute("style", "")
+
         }
     }
 
@@ -88,8 +92,21 @@ class Produto {//classe começando com letra maiuscula
         produto.preco = document.getElementById("preco").value = ""
 
     }
+
+    deletar(id){
+
+        let tbody = document.getElementById("tbody")
+
+        for (let i = 0; i < this.arrayProdutos.length; i++) {//varrer o tamanho da array
+            if (this.arrayProdutos[i].id == id) {// se o index(começo com 0) da array for igual ao id recebido
+                this.arrayProdutos.splice(i, 1)//remover item de uma array. (index do for , quantidade de itens pra deletar)
+                tbody.deleteRow(i);//deleta linhas
+            }
+            
+        }
+    }
 }
 
 
-//objeto
-var produto = new Produto()
+
+var produto = new Produto()//objeto criado a partir da classe Produto
