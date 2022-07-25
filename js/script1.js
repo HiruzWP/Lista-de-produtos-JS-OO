@@ -1,5 +1,5 @@
 //molde
-class Produto {//classe começando com letra maiuscula
+class Produto {//classe começando com letra maiuscula.
 
     constructor() {//inicializador de atributos
         this.id = 1 //dentro dessa classe(this), vai criar um id e inicializar em 1
