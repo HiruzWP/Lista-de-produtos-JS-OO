@@ -2,14 +2,14 @@
 class Produto {//classe começando com letra maiuscula.
 
     constructor() {//inicializador de atributos
-        this.id = 1 //dentro dessa classe(this), vai criar um id e inicializar em 1
-        this.arrayProdutos = []//array vazia criada
+        this.id = 1 //dentro dessa classe(this), irá criar um id e inicializar em 1
+        this.arrayProdutos = []
         this.EditId = null
     }
     
     //método
     salvar(){//ao clicar no botão pra salvar já vai executar o método lerDados
-        let produto = this.lerDados()// produto irá receber os dados do método lerDados(id, nome do produto e o preço)
+        let produto = this.lerDados()// "produto" irá receber os dados do método lerDados(id, nome do produto e o preço)
         if (this.validaCampos(produto) == true) {
             if (this.EditId == null) {
                 this.adicionar(produto)//método adicionar dessa classe
@@ -94,8 +94,8 @@ class Produto {//classe começando com letra maiuscula.
     lerDados(){//método lerDados dentro da classe Produto
         let produto = {//objeto produto
             // Os atributos serão adicionados dinamicamente.
-            //nomeProduto;
-            //preco;
+            //ex: nomeProduto;
+            //ex: preco;
         }
 
         produto.id = this.id // adiciona o atributo id que está nessa(this) classe(class Produto) no objeto produto 
